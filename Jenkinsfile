@@ -10,6 +10,7 @@ pipeline {
 
         stage ("Building apk"){
             steps{
+                sh 'chmod +x ./gradlew'
                 sh './gradlew app:assembleRelease'
             }
         }
