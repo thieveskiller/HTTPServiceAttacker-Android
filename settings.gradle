@@ -1,2 +1,2 @@
-include ':app'
-rootProject.name='HTTPServiceAttacker'
+include ':app', ':HTTPServiceAttacker-0.0.1-SNAPSHOT'
+rootProject.name = 'HTTPServiceAttacker'
