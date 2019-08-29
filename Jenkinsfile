@@ -5,6 +5,7 @@ pipeline {
         stage ('Checking git'){
             steps{
                 scmSkip(deleteBuild: true)
+                sh 'git pull'
             }
         }
 
