@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
     public void onAttackButton(View view) {
         config = new Configuration(new File(getApplicationContext().getFilesDir() + "/config.yml"));
         Attack.setConfig(config);
+        Attack.maxConnectionPerThread = 960;
         if (!isStarted) {
             ((Button) findViewById(R.id.attackButton)).setText("开始攻击  Starting attack...");
             findViewById(R.id.attackButton).setEnabled(false);
