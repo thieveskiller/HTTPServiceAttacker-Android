@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
             WSContent wsContent = MonitorThread.wsContent;
             TextView status = findViewById(R.id.textView3);
             String text = "";
-            text += "Total: " + wsContent.successcount.longValue()
-                    + wsContent.failurecount.longValue() + wsContent.errored.longValue() + "\n";
+            text += "Total: " + (wsContent.successcount.longValue()
+                    + wsContent.failurecount.longValue() + wsContent.errored.longValue()) + "\n";
             text += "Success info: " + wsContent.success.toString() + "\n";
             text += "Failure info: " + wsContent.failure.toString() + " + " + wsContent.errored.toString()
                     + " exceptions" + "\n";
