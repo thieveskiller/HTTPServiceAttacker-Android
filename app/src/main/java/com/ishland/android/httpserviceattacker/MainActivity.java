@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private static boolean isStarted = false;
     private static Configuration config = null;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
